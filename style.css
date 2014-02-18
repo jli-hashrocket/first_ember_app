@@ -383,6 +383,13 @@ label[for='toggle-all'] {
   color: inherit;
 }
 
+span.date{
+  font-style: italic;
+  font-size: 14px;
+  float:right;
+  margin: 10px 50px 0 0;
+}
+
 /*
   Hack to remove background from Mobile Safari.
   Can't use it globally since it destroys checkboxes in Firefox and Opera
