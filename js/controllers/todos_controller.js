@@ -6,9 +6,12 @@ Todos.TodosController = Ember.ArrayController.extend({
       if (!title.trim()) { return; }
 
       // Create the new Todo model
+      var current_date = new Date();
+      var formatted_date = (current_date.getMonth() + 1) + "/" + current_date.getDate() + "/" + current_date.getFullYear();
       var todo = this.store.createRecord('todo', {
         title: title,
-        isCompleted: false
+        isCompleted: false,
+        createdAt: formatted_date
       });
 
       // Clear the "New Todo" text field

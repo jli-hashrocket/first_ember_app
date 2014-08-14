@@ -1,3 +1,8 @@
+/*
+* Two types of controllers: ArrayController and ObjectController. ArrayController is used when there's
+* multiple objects, i.e. collection. Object Controller is for single Objects
+*/
+
 Todos.TodoController = Ember.ObjectController.extend({
   actions: {
     editTodo: function(){
